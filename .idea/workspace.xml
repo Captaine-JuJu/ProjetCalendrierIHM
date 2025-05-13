@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373c70cb-9cd7-45b2-baa2-83791d696904" name="Changes" comment="init" />
+    <list default="true" id="373c70cb-9cd7-45b2-baa2-83791d696904" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controleur/Controleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controleur/Controleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modele/ConstantesCalendrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modele/ConstantesCalendrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vue/GridPaneFormulaireReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vue/GridPaneFormulaireReservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vue/VBoxCalendrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vue/VBoxCalendrier.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +29,11 @@
         <option value="AltantL &lt;antoine.lapluye@gmail.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -33,8 +44,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AltantL/ProjetCalendrier.git&quot;,
-    &quot;accountId&quot;: &quot;7f20c583-f253-4aab-8a16-c8b1ccd1788d&quot;
+    &quot;url&quot;: &quot;https://github.com/Captaine-JuJu/ProjetCalendrierIHM.git&quot;,
+    &quot;accountId&quot;: &quot;6e5c9bd3-41fc-4e72-aa1a-35872f8bdc47&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -53,24 +64,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientsCalendirer.executor": "Run",
-    "Application.PremiereApplication.executor": "Run",
-    "Application.PremièreApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "U:/2024-2025/java/IntelliJ_projets_IHM/ProjetCalendrier",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientsCalendirer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PremiereApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PremièreApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Version-de-juju&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/2024-2025/java/IntelliJ_projets_IHM/ProjetCalendrier&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PremièreApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="vue.PremiereApplication" />
@@ -105,6 +117,8 @@
       <workItem from="1746543009466" duration="209000" />
       <workItem from="1746543230917" duration="2163000" />
       <workItem from="1746623360841" duration="2991000" />
+      <workItem from="1746626395021" duration="2153000" />
+      <workItem from="1747143529103" duration="6535000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -138,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745942352804</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init">
+      <option name="closed" value="true" />
+      <created>1746626503824</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746626503824</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

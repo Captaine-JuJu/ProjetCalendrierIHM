@@ -1,5 +1,6 @@
 package vue;
 
+import controleur.Controleur;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import modele.CalendrierDuMois;
@@ -9,13 +10,13 @@ import modele.Date;
 import static modele.ConstantesCalendrier.*;
 
 public class GridPaneFormulaireReservation extends GridPane implements ConstantesCalendrier {
+    private Label labelTitle;
     public GridPaneFormulaireReservation() {
 
         //Date du jour
 
-        Date today = new Date();
-        Label labelTitle = new Label(today.getJour() + " " + MOIS[today.getMois()-1] + " " +
-                today.getAnnee());
+//        Date today = new Date();
+//        Label labelTitle = new Label(today.getJour() + " " + MOIS[today.getMois()-1] + " " + today.getAnnee());
 
 
 
@@ -42,12 +43,18 @@ public class GridPaneFormulaireReservation extends GridPane implements Constante
         radioGroup.getToggles().addAll(radioButtonDebutant, radioButtonMoyen, radioButtonAvance, radioButtonExpert);
 
         ComboBox<String> heureDepart;
+        heureDepart = peupleComboBox(HEURES);
         ComboBox<String> minuteDepart;
+        minuteDepart = peupleComboBox(MINUTES);
         ComboBox<String> heureFin;
+        heureFin = peupleComboBox(HEURES);
         ComboBox<String> minuteFin;
+        minuteFin = peupleComboBox(MINUTES);
 
         Button boutonAnnuler = new Button("Annuler");
+        boutonAnnuler.setOnAction(new Controleur());
         Button boutonEnregistrer = new Button("Enregistrer");
+        boutonEnregistrer.setOnAction(HBoxRoot.getControleur());
 
         //espace pour H et V
         this.setHgap(10);
@@ -73,8 +80,31 @@ public class GridPaneFormulaireReservation extends GridPane implements Constante
         this.add(labelAvance, 2, 3,1,1);
         this.add(labelExpert, 4, 3,1,1);
 
+        //ComboBox ajout
+        this.add(heureDepart, 2, 4, 1, 1);
+        this.add(heureFin, 2, 5, 1, 1);
+        this.add(minuteDepart, 4, 4, 1, 1);
+        this.add(minuteFin, 4, 5, 1, 1);
+
+
         //bouton annuler et enregistrer
         this.add(boutonAnnuler, 2, 6, 1, 1);
         this.add(boutonEnregistrer, 4, 6, 1, 1);
+
+
+
+    }
+
+    private ComboBox<String> peupleComboBox(String[] strings) {
+        ComboBox<String> comboBox = new ComboBox<>();
+        for(String string : strings) {
+            comboBox.getItems().add(string);
+        }
+        comboBox.setValue(strings[0]);
+        return comboBox;
+    }
+
+    public void setDate(Date date) {
+        labelTitle.setText(date.getJour() + " " + date.getMois() + " " + date.getAnnee());
     }
 }
